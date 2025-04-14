@@ -13,12 +13,12 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: Build and test
-        working-directory: book
+        working-directory: Projet_DevOps/book
         run: |
           export SHELL=/bin/bash
           ./gradlew build
       - name: Docker images
-        working-directory: book
+        working-directory: Projet_DevOps/book
         run: |
           export SHELL=/bin/bash
           docker build -t book .
